@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
-import App from "./App"; // Adjust path if needed
-// import "./index.css";      // Correct path from src/app/ to root index.css
-
+import App from "./App";
 export default function HomePage() {
   return <App />;
 }
