@@ -9,7 +9,7 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
-import { motion } from "framer-motion";
+import Image from "next/image";
 import Reveal from "./Reveal";
 
 export default function Hero() {
@@ -35,46 +35,25 @@ export default function Hero() {
     },
   ];
 
-  const scrollToContact = () => {
-    const element = document.querySelector("#contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <header
       id="home"
-      className="relative min-h-screen overflow-hidden bg-transparent px-3 sm:px-4 md:px-6 lg:px-12"
+      className="relative min-h-[100svh] overflow-hidden bg-transparent px-3 sm:px-4 md:px-6 lg:px-12"
     >
-      <motion.div
+      <Image
+        src="/hero.webp"
+        alt=""
         aria-hidden="true"
-        className="absolute inset-0 bg-cover bg-no-repeat"
-        style={{
-          backgroundImage: "url(/mine1.png)",
-          backgroundPosition: "78% center",
-        }}
-        initial={{ scale: 1.03, x: 30 }}
-        animate={{ scale: 1.03, x: 20 }}
-        transition={{
-          duration: 0.8,
-          ease: "easeOut",
-        }}
-      />
-      <motion.div
-        aria-hidden="true"
-        className="hidden"
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 0.4, scale: 1 }}
-        transition={{
-          duration: 1,
-          ease: "easeOut",
-        }}
+        fill
+        priority
+        fetchPriority="high"
+        sizes="100vw"
+        className="object-cover object-[78%_center] scale-[1.03]"
       />
       <div className="absolute inset-0 bg-black/46" />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.18)_0%,rgba(2,6,23,0.42)_58%,rgba(2,6,23,0.72)_100%)]" />
 
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-2 sm:px-0">
+      <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl items-center px-2 sm:px-0">
         <div className="w-full py-16 sm:py-20">
           <div className="max-w-3xl">
             <Reveal variant="up">

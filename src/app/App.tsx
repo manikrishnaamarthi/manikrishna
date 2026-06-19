@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="relative min-h-screen overflow-x-clip bg-[#0a0a0a] text-white">
       <div className="pointer-events-none fixed inset-0 -z-20 bg-[#0a0a0a]" />
-      <div className="pointer-events-none fixed inset-0 -z-10 bg-linear-gradient(180deg,#050505_0%,#0a0a0a_35%,#050505_100%)" />
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(180deg,#050505_0%,#0a0a0a_35%,#050505_100%)]" />
 
       <main className="relative w-full">
         <Hero />
