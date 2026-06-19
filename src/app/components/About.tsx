@@ -5,6 +5,7 @@ import {
   Smartphone,
   type LucideIcon,
 } from "lucide-react";
+import Image from "next/image";
 import Reveal from "./Reveal";
 
 const highlights: Array<{
@@ -56,11 +57,13 @@ export default function About() {
         <div className="grid gap-6 md:gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:gap-x-10 lg:gap-y-8 lg:items-start">
           <Reveal variant="scale" className="lg:row-span-2">
             <div className="relative overflow-hidden rounded-2xl md:rounded-[2.25rem] border border-white/10 bg-white/5 p-4 sm:p-5 md:p-6 backdrop-blur-2xl">
-              <div className="relative overflow-hidden rounded-xl md:rounded-[1.75rem] border border-white/10 bg-black/25">
-                <img
-                  src="/mine2.jpeg"
+              <div className="relative h-[22rem] w-full overflow-hidden rounded-xl md:rounded-[1.75rem] border border-white/10 bg-black/25 sm:h-80 md:h-[420px] lg:h-[450px]">
+                <Image
+                  src="/about.webp"
                   alt="Amarthi Manikrishna portrait"
-                  className="h-[22rem] w-full object-cover object-[center_18%] sm:h-80 md:h-[420px] md:object-top lg:h-[450px]"
+                  fill
+                  sizes="(min-width: 1024px) 38vw, (min-width: 768px) 45vw, 100vw"
+                  className="object-cover object-[center_18%] md:object-top"
                 />
               </div>
             </div>

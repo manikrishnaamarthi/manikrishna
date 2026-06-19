@@ -85,7 +85,7 @@ export default function Achievements() {
           <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.32em] text-sky-300">
             Achievements
           </p>
-          <h2 className="mt-4 sm:mt-5 text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:text-6xl font-semibold tracking-tight text-white">
+          <h2 className="mt-4 sm:mt-5 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-tight text-white">
             Signals of delivery, ownership, and{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-sky-300 to-violet-300">
               product growth
